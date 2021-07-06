@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".userListAdmin"
+    tools:deviceIds="wear"
+    android:orientation="vertical">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:text="User List"
+       android:textSize="25dp"
+       android:textStyle="bold"
+       android:textAlignment="center"
+       >
+
+   </TextView>
+
+   <ListView
+       android:layout_width="match_parent"
+       android:layout_height="600dp"
+       android:id="@+id/user">
+
+   </ListView>
+</LinearLayout>

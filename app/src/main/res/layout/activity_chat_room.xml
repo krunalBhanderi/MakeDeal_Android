@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".chat_room"
+    tools:deviceIds="wear"
+    android:orientation="vertical"
+    android:background="#374D63">
+
+  <TextView
+      android:id="@+id/name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="yash"
+      android:textSize="25dp"
+      android:padding="5dp"
+      android:textAlignment="center"
+      android:background="#374D63">
+
+  </TextView>
+
+
+  <ScrollView
+      android:layout_width="wrap_content"
+      android:layout_height="500dp">
+    <LinearLayout
+        android:textAlignment="viewEnd"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+      <ListView
+          android:id="@+id/chat"
+          android:layout_width="match_parent"
+          android:layout_height="500dp"
+          android:background="@color/white">
+
+
+      </ListView>
+    </LinearLayout>
+
+  </ScrollView>
+  <LinearLayout
+      android:layout_marginTop="10dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:background="#E7E6E8"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="20dp">
+
+
+  <EditText
+      android:id="@+id/msg"
+      android:layout_width="300dp"
+      android:layout_height="50dp"
+        android:paddingLeft="10dp"
+      android:textColor="@color/black"
+      android:layout_marginTop="0dp"
+      android:background="#E7E6E8"
+      >
+  </EditText>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <ImageButton
+        android:id="@+id/send"
+      android:src="@drawable/ic_baseline_send_24"
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:background="#374D63"></ImageButton>
+
+   </LinearLayout>
+
+</LinearLayout>
